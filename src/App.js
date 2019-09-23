@@ -55,6 +55,7 @@ class App extends Component {
     }))
   }
 
+  // Wtf is this conditional syntax? 
   updateIntervalSetting = increment => {
     this.setState(prevState => {
       if (prevState.updateInterval + increment <= 1) return { updateInterval: 1 }
